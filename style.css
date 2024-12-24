@@ -1,0 +1,155 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url(fonts/NotoSans-Regular.ttf) format("truetype");
+}
+
+.flex {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#432818, #99582A, #BB9457); 
+    color: white;
+    border-radius: 8px;
+}
+
+.imagem, .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.imagem > img {
+    border-radius: 8px;
+}
+
+.imagem > h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    text-align: justify;
+}
+
+.imagem > p, .imagem > span, .texto > p, .texto > span {
+    font-family: "Noto Sans", sans-serif;
+    margin: 10px;
+    text-align: justify;
+}
+
+.span > a {
+    font-family: "Noto Sans", sans-serif;
+    color: #FFE6A7;
+}
+ 
+.agradecimento {
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #6F1D1B; 
+    color: white;
+    border-radius: 8px;
+}
+
+.agradecimento > h1, .agradecimento > h3, .agradecimento > p {
+    margin: 10px;
+}
+
+.agradecimento > h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.agradecimento > p {
+    font-family: "Noto Sans";
+    text-align: justify;
+}
+
+.rodapé {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #004f44; 
+    color: white;
+    border-radius: 8px;
+}
+
+.rodapé > h2, .rodapé > p, .rodapé > a {
+    margin: 0px 10px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.rodapé > a, .rodapé > p {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .imagem, .texto {
+        padding: 0;
+        margin: 0;
+    }
+
+    .imagem > p, .texto > p {
+        font-size: 14px;
+    } 
+
+    .flex {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .rodapé {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .agradecimento {
+        padding: 10px;
+        margin: 10px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #6F1D1B; 
+        color: white;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .imagem > img {
+        width: 280px;
+        height: 164px;
+    }
+
+    .rodapé > h2, .rodapé > p, .rodapé > a {
+        margin: 10px;
+    }
+}
